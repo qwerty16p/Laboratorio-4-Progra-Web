@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Final – Guía 4</title>
+    <link rel="stylesheet" href="ejercicio-final.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recordatorio de Actividades</h1>
+        <form id="reminder-form">
+            <div class="form-group">
+                <label for="dayOfWeek">Selecciona el día de la semana:</label>
+                <select id="dayOfWeek" name="dayOfWeek">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miercoles">Miércoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sabado">Sábado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="customMessage">Mensaje personalizado:</label>
+                <input type="text" id="customMessage" name="customMessage" placeholder="Ej: No olvides...">
+            </div>
+            <button type="submit">Generar Recordatorio</button>
+        </form>
+        <div id="reminder-display" class="reminder"></div>
+    </div>
+    <script src="ejercicio-final.js"></script>
+</body>
+</html>
